@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  background: #f5f7fb;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 5px solid #b31942;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  color: #0a3161;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: #0a3161;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.nav-links a:hover {
+  color: #b31942;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.small-title {
+  color: #b31942;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  color: #0a3161;
+  font-size: 54px;
+  line-height: 1;
+  margin: 10px 0 20px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+}
+
+.red {
+  background: #b31942;
+  color: white;
+}
+
+.blue {
+  background: #0a3161;
+  color: white;
+}
+
+.hero-image {
+  background: linear-gradient(135deg, #0a3161, #b31942);
+  padding: 10px;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.hero-image img {
+  border-radius: 18px;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  background: #d9d9d9;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.section h2 {
+  color: #0a3161;
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.section p {
+  font-size: 19px;
+}
+
+.donate-section {
+  background: white;
+  border-radius: 24px;
+  margin-top: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.donation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.donate-button {
+  background: #b31942;
+  color: white;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 999px;
+  font-weight: 900;
+  min-width: 120px;
+  text-align: center;
+}
+
+.donate-button:hover {
+  background: #0a3161;
+}
+
+.volunteer-section {
+  background: #0a3161;
+  color: white;
+  border-radius: 24px;
+  margin-top: 40px;
+}
+
+.volunteer-section h2 {
+  color: white;
+}
+
+.signup-form {
+  background: white;
+  color: #1a1a1a;
+  padding: 24px;
+  border-radius: 18px;
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.signup-form label {
+  font-weight: 800;
+  color: #0a3161;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  border: 2px solid #d5dbe6;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.signup-form input:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+  outline: none;
+  border-color: #0a3161;
+}
+
+.site-footer {
+  background: #061d3a;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 60px;
+  border-top: 5px solid #b31942;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-image img {
+    height: auto;
+  }
+
+  .section h2 {
+    font-size: 32px;
+  }
+}
